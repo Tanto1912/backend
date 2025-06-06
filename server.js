@@ -27,9 +27,9 @@ app.get("/", (req, res) => {
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-app.use("/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 app.use("/api/users", usersRoutes);
-app.use("/produk", produkRoutes);
+app.use("/api/produk", produkRoutes);
 app.use("/api/articles", postRoutes);
 app.use("/api/banners", bannerRoutes);
 
